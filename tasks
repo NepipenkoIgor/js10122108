@@ -1,1 +1,7 @@
 1) Напишите функцию transfor(str)  =>  'aabbbaccaa' => '2a3b1a2c2a'
+========
+1) Напишите функцию deepEqual(obj1, obj2) => deepEqual({a:1, b:{c:2}},{a:1, b:{c:2}}) //true
+deepEqual({a:1, b:{c:2}, d:1},{a:1, b:{c:2}}) //false
+Только собственные ключи
+2) Напишите функцию styleToObj(str)
+let str = `position:fixed;border:1px solid red;color: red;`  => {position: 'fixed',border: '1px solid red',color: 'red' }
