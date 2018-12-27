@@ -156,20 +156,20 @@
 // _id = 9129;
 // console.log(usersWithPermission[_id]);
 
-let person1 = {
-    info: {
-        bonus: 30
-    },
-    name: 'Igor',
-    age: 32
-}
-let person2 = {
-    name: 'Igor',
-    age: 32,
-    info: {
-        bonus: 30,
-    }
-}
+// let person1 = {
+//     info: {
+//         bonus: 30
+//     },
+//     name: 'Igor',
+//     age: 32
+// }
+// let person2 = {
+//     name: 'Igor',
+//     age: 32,
+//     info: {
+//         bonus: 30,
+//     }
+// }
 
 // const objStr1 = JSON.stringify(person1);
 // const objStr2 = JSON.stringify(person2);
@@ -178,52 +178,59 @@ let person2 = {
 // console.log(objStr1 === objStr2);
 // let a = {b: undefined};
 // let c = {a: undefined};
-let a = {"1": indefined};
-let b = {1: undefined};
+// let a = {"1": indefined};
+// let b = {1: undefined};
+//
+// function deepEqual(value1, value2) {
+//     if (value1 === value2) {
+//         return true;
+//     }
+//     if (value1 === null || value2 === null) {
+//         return false;
+//     }
+//
+//     if (typeof value1 !== 'object' || typeof value2 !== 'object') {
+//         return false;
+//     }
+//
+//     if (Object.keys(value1).length !== Object.keys(value2).length) {
+//         return false;
+//     }
+//     return Object.keys(value1).every((key) => {
+//         if (!value2.hasOwnProperty(key)) {
+//             return false;
+//         }
+//         return deepEqual(value1[key], value2[key]);
+//     });
+// }
+//
+// // console.log(deepEqual(person1, person2));
+// console.log(deepEqual(a, b));
+//
+// let styles = `position: fixed;
+//               width: 100%;
+//               height: 80%;
+//               border:1px solid red;
+//               `;
+//
+//
+// function styleToObject(stylesString) {
+//     return stylesString
+//         .split(';')
+//         .map(style => style.trim())
+//         .filter(Boolean)
+//         .map(style => style.split(':'))
+//         .reduce((styles, [styleName, styleValue]) => {
+//             styles[styleName] = styleValue.trim();
+//             return styles;
+//         }, {});
+// }
+//
+// styleToObject(styles);
 
-function deepEqual(value1, value2) {
-    if (value1 === value2) {
-        return true;
-    }
-    if (value1 === null || value2 === null) {
-        return false;
-    }
-
-    if (typeof value1 !== 'object' || typeof value2 !== 'object') {
-        return false;
-    }
-
-    if (Object.keys(value1).length !== Object.keys(value2).length) {
-        return false;
-    }
-    return Object.keys(value1).every((key) => {
-        if (!value2.hasOwnProperty(key)) {
-            return false;
-        }
-        return deepEqual(value1[key], value2[key]);
-    });
-}
-
-// console.log(deepEqual(person1, person2));
-console.log(deepEqual(a, b));
-
-let styles = `position: fixed;
-              width: 100%;
-              height: 80%;
-              border:1px solid red;
-              `;
+// let account = {
+//     name: 'Igor'
+//     , age: 32,
+// };
 
 
-function styleToObject(stylesString) {
-    return stylesString
-        .split(';')
-        .map(style => style.trim())
-        .filter(Boolean)
-        .map(style => style.split(':'))
-        .reduce((styles, [styleName, styleValue]) => {
-            styles[styleName] = styleValue.trim();
-            return styles;
-        }, {});
-}
-
-styleToObject(styles);

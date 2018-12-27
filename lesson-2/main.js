@@ -97,20 +97,21 @@ let obj1 = {
 // }
 // console.log(obj.toString());
 
-// let account = {
-//     name: 'Igor',
-//     surname: 'Nepipenko',
-//     info: {
-//         code: 123123
-//     },
-//     get fullName() {
-//         return `${this.name} ${this.surname}`;
-//     },
-//     set fullName(obj1) {
-//         this.name = obj1.name;
-//         this.surname = obj1.surname;
-//     }
-// };
+let account = {
+    name: 'Igor',
+    surname: 'Nepipenko',
+    info: {
+        code: 123123
+    },
+    muInfo(){},
+    get fullName() {
+        return `${this.name} ${this.surname}`;
+    },
+    set fullName(obj1) {
+        this.name = obj1.name;
+        this.surname = obj1.surname;
+    }
+};
 // const {name: myAccountName, info: {code}, surname, age = 33} = account;
 // function a({name: myAccountName, info: {code}, surname, age = 33}){
 //     console.log(myAccountName);
