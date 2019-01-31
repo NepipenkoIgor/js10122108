@@ -1,0 +1,7 @@
+.menu__title {
+  cursor: pointer;
+}
+
+.menu--closed .menu__items-list {
+  display: none ;
+}
